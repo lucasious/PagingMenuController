@@ -176,12 +176,12 @@ open class PagingViewController: UIViewController {
                              (.all, controllers.count - 1):
                             guard let previousPagingView = controllers[index - 1].view else { continue }
                             // H:[previousPagingView][pagingView]|
-                            previousPagingView.trailingAnchor.constraint(equalTo: pagingView.leadingAnchor, constant: 10).isActive = true
+                            previousPagingView.trailingAnchor.constraint(equalTo: pagingView.leadingAnchor, constant: -10).isActive = true
                             pagingView.trailingAnchor.constraint(equalTo: contentScrollView.trailingAnchor).isActive = true
                     case (.three, _), (.all, _):
                         guard let previousPagingView = controllers[index - 1].view else { continue }
                         // H:[previousPagingView][pagingView]
-                        previousPagingView.trailingAnchor.constraint(equalTo: pagingView.leadingAnchor, constant: 10).isActive = true
+                        previousPagingView.trailingAnchor.constraint(equalTo: pagingView.leadingAnchor, constant: -10).isActive = true
                     default: break
                     }
                 }

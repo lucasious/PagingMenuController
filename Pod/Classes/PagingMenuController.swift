@@ -233,7 +233,7 @@ open class PagingMenuController: UIViewController {
         // V:[menuView(height)]
         NSLayoutConstraint.activate([
             menuView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60),
-            menuView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 40),
+            menuView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             menuView.heightAnchor.constraint(equalToConstant: height)
             ])
         
